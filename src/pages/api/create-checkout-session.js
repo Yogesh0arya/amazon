@@ -28,8 +28,8 @@ export default async (req, res) =>{
         },
         line_items: transformedItems,
         mode: 'payment',
-        success_url: 'https://amazon-1201lv4sd-yogesh0arya.vercel.app/success',
-        cancel_url: `${process.env.HOST}/checkout`,
+        success_url: 'https://amazonclone-k5dbukq3j-yogesh0arya.vercel.app/success',
+        cancel_url: 'https://amazonclone-k5dbukq3j-yogesh0arya.vercel.app/checkout',
         metadata: {
             email,
             images: JSON.stringify(items.map(item => item.image))
